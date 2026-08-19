@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-08-19, 09:53 p.m.
+# Technique   trial-division-factor-counting
+# Time        O(N * M) where N is the array size and …
+# Space       O(N) to store the input array
+# Insight     The algorithm determines primality by counting the total number of divisors for each integer in the array and verifying that the count equals exactly two.
+# Interview   Before: "How would you check if all numbers in a list are prime?" After: "I would iterate through the list and verify each number has exactly two divisors using trial division, resulting in O(N * M) time complexity, where M is the maximum value in the array."
+# Pitfalls    (1) The algorithm incorrectly identifies 1 as non-prime by counting only one divisor, which is correct, but it is inefficient for large integers.  (2) The trial division loop runs up to n, which is significantly slower than checking up to the square root of n.
 # ──────────────────────────────────────────────────
 
 def isprime(n):
