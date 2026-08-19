@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-08-19, 09:25 p.m.
+# Technique   linear-scan-accumulator
+# Time        O(n)
+# Space       O(n)
+# Insight     The algorithm iterates through the input list once, incrementing a counter for positive integers and accumulating the sum of non-positive integers.
+# Interview   Before: "How would you count positives and sum negatives in one pass?" After: "I iterate through the array once, maintaining a counter and a running sum, resulting in O(n) time and O(n) space complexity, while correctly handling the empty input case by printing a space."
+# Pitfalls    (1) The code treats zero as a negative number by adding it to the sum, which is consistent with the rule that zero is not positive.  (2) The code prints a space for an empty input array instead of returning an empty array, as specified by the problem constraints.
 # ──────────────────────────────────────────────────
 
 n = int(input())
