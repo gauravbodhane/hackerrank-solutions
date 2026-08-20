@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-08-20, 08:39 a.m.
+# Technique   nested-loop-matrix-traversal
+# Time        O(1)
+# Space       O(1)
+# Insight     The algorithm iterates through every cell of the fixed 3x3 matrix and accumulates the value into a running sum if the element is odd.
+# Interview   Before: "How would you sum specific elements in a 2D array?" After: "I iterate through the 3x3 matrix using nested loops, checking each element with the modulo operator. This approach runs in O(1) time and O(1) space, as the matrix size is constant."
+# Pitfalls    (1) Assuming the input matrix size is dynamic when the problem constraints strictly define a 3x3 matrix.  (2) Failing to handle non-integer inputs if the input format deviates from the specified integer matrix structure.
 # ──────────────────────────────────────────────────
 
 a = []
