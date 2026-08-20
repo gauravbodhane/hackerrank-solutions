@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-08-20, 08:45 a.m.
+# Technique   brute-force-prime-check
+# Time        O(N^2 * M)
+# Space       O(N^2)
+# Insight     The program iterates through every element in the 3x3 matrix and adds it to the total sum if the element has exactly two divisors.
+# Interview   Before: "How would you sum prime numbers in a matrix?" After: "I would iterate through each cell and verify primality by counting divisors, resulting in O(N^2 * M) time complexity, where M is the maximum value in the matrix."
+# Pitfalls    (1) The isprime function incorrectly identifies 1 as a non-prime by checking for exactly two divisors, which is correct, but it is inefficient for large inputs.  (2) The nested loops are hardcoded for a 3x3 matrix, which will fail if the input dimensions deviate from the problem statement's constraints.  (3) The primality test uses an O(N) approach per element, which is inefficient compared to O(sqrt(N)) trial division.
 # ──────────────────────────────────────────────────
 
 def isprime(n):
