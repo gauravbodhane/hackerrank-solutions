@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-08-25, 12:14 p.m.
+# Technique   nested-loop-row-index-parity
+# Time        O(1)
+# Space       O(1)
+# Insight     The algorithm iterates through a fixed 3x3 matrix and accumulates values only from rows where the index is even.
+# Interview   Before: "How would you sum specific rows in a matrix?" After: "I iterate through the matrix and use the modulo operator on the row index to identify even rows, resulting in O(1) time complexity for a fixed 3x3 input."
+# Pitfalls    (1) The code assumes a fixed 3x3 input size, which fails if the input matrix dimensions differ from the problem constraints.  (2) The logic relies on hardcoded input reading, which will raise an EOFError if fewer than three lines are provided.
 # ──────────────────────────────────────────────────
 
 l1 = [int (i) for i in input().split()]
