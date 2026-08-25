@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-08-25, 11:34 a.m.
+# Technique   nested-loop-modulo-indexing
+# Time        O(1)
+# Space       O(1)
+# Insight     The algorithm iterates through every element of the 3x3 matrix and accumulates values where the column index is even.
+# Interview   Before: "How would you sum specific columns in a fixed-size matrix?" After: "I iterate through the 3x3 grid using nested loops and apply a modulo operator to identify even-indexed columns, resulting in O(1) time and space complexity."
+# Pitfalls    (1) Assuming the input matrix size is dynamic when the problem explicitly defines a 3x3 matrix.  (2) Confusing row-major indexing with column-major indexing when calculating the sum of even-indexed columns.
 # ──────────────────────────────────────────────────
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
