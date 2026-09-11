@@ -7,6 +7,12 @@
 # Language    python3
 # Status      Accepted
 # Submitted   2026-09-11, 05:19 p.m.
+# Technique   string-reversal-conversion
+# Time        O(D)
+# Space       O(D)
+# Insight     The program calculates the absolute difference between an integer and its reversed digit representation by converting the input to a string, reversing it, and performing arithmetic on the integer casts.
+# Interview   Before: "How would you find the difference between a number and its reverse?" After: "I convert the number to a string to reverse it in O(D) time, where D is the number of digits, then subtract the integer values to find the absolute difference."
+# Pitfalls    (1) The code assumes the input is a valid integer string and will raise a ValueError if non-numeric characters are provided.  (2) Leading zeros in the reversed number are handled correctly by the int() constructor, but this might be unexpected if the problem required preserving string formatting.
 # ──────────────────────────────────────────────────
 
 n = input()
