@@ -6,7 +6,7 @@
 # Platform    HackerRank
 # Language    python3
 # Status      Accepted
-# Submitted   2026-11-05, 05:18 p.m.
+# Submitted   2026-11-06, 10:20 p.m.
 # ──────────────────────────────────────────────────
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
