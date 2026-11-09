@@ -6,7 +6,7 @@
 # Platform    HackerRank
 # Language    python3
 # Status      Accepted
-# Submitted   2026-11-09, 04:16 p.m.
+# Submitted   2026-11-09, 04:18 p.m.
 # ──────────────────────────────────────────────────
 
 n = input()
