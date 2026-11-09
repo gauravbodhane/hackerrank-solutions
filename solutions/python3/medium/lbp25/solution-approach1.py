@@ -6,7 +6,7 @@
 # Platform    HackerRank
 # Language    python3
 # Status      Accepted
-# Submitted   2026-11-09, 04:42 p.m.
+# Submitted   2026-11-09, 04:43 p.m.
 # ──────────────────────────────────────────────────
 
 c = int(input())
